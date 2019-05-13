@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./smartSchoolAdmin.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div class="body">
+            <div id="login-component">
+                <div class="login-component">
+                    <img src="http://www.avanthisca.com:9000/assets/images/smart%20college.PNG" alt="logo">
+                    <div class="login-header">SMART COLLEGE LOGIN</div>
+                    <div class="form">
+                    <div class="label">USERNAME</div>
+                    <input type="text" class="login-text-field" id="username">
+                    <div class="label">PASSWORD</div>
+                    <input type="password" class="login-text-field"id="Password">
+                    <a  href="#" class="Forgot-password">Forgot Password?</a>
+                    <button  id="login-button">Login</button>
+                    </div>
+
+                </div> 
+            </div>
+            <div id="login-success">
+                <div class="nav-bar">
+                    <div class="nav-header">Smart School Admin</div>
+                    <div class="nav-right-icons">
+                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-power-off"></i>
+                    </div>
+
+                </div>
+                <span class="component-holder">
+                    <div class="semister-results">
+                        <div>
+                            <div>External Results</div>
+                            <div>Semister Wise Results</div>
+                        </div>
+                        <div id="chat-graph-holder">
+                            <div id= "box"></div>
+
+                        </div>
+
+                    </div>
+                    <div id="component2"></div>
+                    <div id="component3"></div>
+                    <div id="component4"></div>
+                    <div id="component5">
+                        <div>Todo</div>
+                        <input type="text" id="todo-text-field" placeholder="Enter text here">
+                        <hr>
+                        <ul id="ul"></ul>
+                    </div>
+                </span>
+                <div class="footer">
+                    <div id="footer-icons">
+                        <img src="http://www.avanthisca.com:9000/assets/images/dashboards.png" data-value="dashboard details" class="dashboards-image footer-icons" title="Dashboards">
+                        <img src="http://www.avanthisca.com:9000/assets/images/schools.png" data-value="schools details" class="schools-image footer-icons" title="Schools">
+                        <img src="http://www.avanthisca.com:9000/assets/images/colleges.png" data-value="college details" class="colleges-image footer-icons" title="Colleges">
+                        <img src="http://www.avanthisca.com:9000/assets/images/admins.png" data-value="admin details" class="admins-image footer-icons" title="Admins">
+                        <img src="http://www.avanthisca.com:9000/assets/images/email.png" data-value="email details" class="email-image footer-icons" title="Email">
+                    </div>
+                    <div id="footer-component">
+                        Copyrights and reserved by 'Universal security system pvt limited'.
+                    </div>
+                </div>
+                <div class="popup" id="popup">
+                    <div class="background">
+                        <div class="content-component">
+                            <div class="popup-cross" id="popup-cross">X</div>
+                            <div class="popup-content">
+                                content coming soon...............
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- 
+        <script>
+            function barChat(obj){
+                //var ChatHolder = document.getElementById("chat-graph-holder")
+                //var div1 = document.createElement("div");
+                var div1 = document.getElementById("box");
+                var div11 = document.createElement("div");
+                var div111 = document.createElement("div");
+                var div1111 = document.createElement("div");
+                var div112 = document.createElement("div");
+                //ChatHolder.appendChild(div1);
+                div1.appendChild(div11);
+                div11.appendChild(div111);
+                div11.appendChild(div112);
+                div111.appendChild(div1111);
+                //div1.setAttribute("class","box");
+                div11.setAttribute("class","skill");
+                div111.setAttribute("class","graph");
+                div111.setAttribute("style","height:"+obj.percentage);
+                div1111.setAttribute("class","percentage");
+                div1111.textContent = obj.percentage;
+                div112.setAttribute("class","name");
+                div112.textContent = obj.name;
+            }
+            var list = [
+                {
+                    name:"HTML",
+                    percentage:"25%"
+                },
+                {
+                    name:"HTML",
+                    percentage:"35%"
+                },
+                {
+                    name:"HTML",
+                    percentage:"25%"
+                },
+                {
+                    name:"HTML",
+                    percentage:"15%"
+                },
+                {
+                    name:"HTML",
+                    percentage:"65%"
+                },
+                {
+                    name:"HTML",
+                    percentage:"85%"
+                },
+            ]
+            list.map((obj)=>barChat(obj));
+        </script> -->
+        <script src = "./jsFiles/ajaxfiles.js"></script>
+        <script src = "./jsFiles/loginFile.js"></script>
+        <script src="./jsFiles/externalGraph.js"></script>
+        <script src = "./jsFiles/component2.js"></script>
+        <script src = "./jsFiles/component3.js"></script>
+        <script src = "./jsFiles/component4.js"></script>
+        <script src = "./jsFiles/component5.js"></script>
+        <script src = "./jsFiles/footerLinks.js"></script>
+        <script src = "./jsFiles/popupContent.js"></script>
+    </body>
+</html>
